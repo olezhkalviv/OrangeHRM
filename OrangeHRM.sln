@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeHRM.UI", "OrangeHRM.UI\OrangeHRM.UI.csproj", "{A86024F4-20D4-471B-9C42-2D4B2FA49BD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeHRM.Tests", "OrangeHRM.Tests\OrangeHRM.Tests.csproj", "{8F9C59A8-9E85-47B6-8E47-24537BF785F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A86024F4-20D4-471B-9C42-2D4B2FA49BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86024F4-20D4-471B-9C42-2D4B2FA49BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86024F4-20D4-471B-9C42-2D4B2FA49BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A86024F4-20D4-471B-9C42-2D4B2FA49BD7}</ProjectGuid>
+    <ProjectGuid>{8F9C59A8-9E85-47B6-8E47-24537BF785F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OrangeHRM.UI</RootNamespace>
-    <AssemblyName>OrangeHRM.UI</AssemblyName>
+    <RootNamespace>OrangeHRM.Tests</RootNamespace>
+    <AssemblyName>OrangeHRM.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
