@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeHRM.UI", "OrangeHRM.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeHRM.Tests", "OrangeHRM.Tests\OrangeHRM.Tests.csproj", "{8F9C59A8-9E85-47B6-8E47-24537BF785F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeHRM.Specs", "OrangeHRM.Specs\OrangeHRM.Specs.csproj", "{1DDBF993-4C3B-4CEB-A2F7-44CE235F7610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9C59A8-9E85-47B6-8E47-24537BF785F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDBF993-4C3B-4CEB-A2F7-44CE235F7610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDBF993-4C3B-4CEB-A2F7-44CE235F7610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDBF993-4C3B-4CEB-A2F7-44CE235F7610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDBF993-4C3B-4CEB-A2F7-44CE235F7610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
