@@ -1,14 +1,10 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace OrangeHRM.UI
 {
     public abstract class Page
     {
         protected IWebDriver driver;
-
-        [FindsBy(How = How.ClassName, Using = "page-title")]
-        protected IWebElement Title { get; set; }
 
         protected void SwitchToFrame()
         {

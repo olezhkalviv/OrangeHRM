@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
-using System;
-using OpenQA.Selenium.Interactions;
 using System.Threading;
 
 namespace OrangeHRM.UI

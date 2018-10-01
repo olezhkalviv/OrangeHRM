@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -25,15 +24,13 @@ namespace OrangeHRM.UI
         [FindsBy(How = How.Id, Using = "btView")]
         private IWebElement View { get; set; }
 
-
+        [FindsBy(How = How.Id, Using = "resultTable")]
+        private IWebElement ResultTable { get; set; }
 
         [FindsBy(How = How.Id, Using = "btnAdd")]
         private IWebElement Add { get; set; }
 
         private CalendarComponent CalendarComponent => new CalendarComponent(driver);
-
-        [FindsBy(How = How.Id, Using = "resultTable")]
-        private IWebElement ResultTable { get; set; }
 
         public override bool IsVisible => driver.Url.Contains(UrlPart);
 
@@ -92,6 +89,7 @@ namespace OrangeHRM.UI
         }
 
         private const int PunchInIndex = 1;
+        private const int SelectionOffset = 1;
 
         private IWebDriver driver;
         private IWebElement row;
@@ -118,7 +116,7 @@ namespace OrangeHRM.UI
             get
             {
                 driver.SwitchTo().Frame(0);
-                var text = GetCellInRowByIndex(PunchInIndex + 1).Text;
+                var text = GetCellInRowByIndex(PunchInIndex + SelectionOffset).Text;
                 driver.SwitchTo().ParentFrame();
                 return text;
             }
