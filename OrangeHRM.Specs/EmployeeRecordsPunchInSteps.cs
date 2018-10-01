@@ -2,7 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OrangeHRM.UI;
-using System;
 using System.Linq;
 using TechTalk.SpecFlow;
 

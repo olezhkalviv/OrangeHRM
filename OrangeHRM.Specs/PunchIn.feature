@@ -4,7 +4,7 @@
 	I want to be able to set Punch In
 
 @mytag
-Scenario: Verifying that Punch In is empty by default and user can set in
+Scenario: Verifying that Punch In is empty by default and user can set it
 	Given I logged in to the 'https://orangehrm-demo-6x.orangehrmlive.com/auth/login' hrm using 'admin' / 'admin123' credentials
 	And I navigated to View Attendance Record page
 	And I set 'Andrew Keller' as employee name

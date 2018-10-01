@@ -68,11 +68,11 @@ namespace OrangeHRM.Specs
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Verifying that Punch In is empty by default and user can set in", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Verifying that Punch In is empty by default and user can set it", new string[] {
                 "mytag"}, SourceLine=6)]
-        public virtual void VerifyingThatPunchInIsEmptyByDefaultAndUserCanSetIn()
+        public virtual void VerifyingThatPunchInIsEmptyByDefaultAndUserCanSetIt()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifying that Punch In is empty by default and user can set in", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifying that Punch In is empty by default and user can set it", null, new string[] {
                         "mytag"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
