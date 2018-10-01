@@ -18,6 +18,9 @@ namespace OrangeHRM.UI
         [FindsBy(How = How.Id, Using = "attendance_employeeName_empName")]
         private IWebElement EmployeeName { get; set; }
 
+        [FindsBy(How = How.ClassName, Using = "ac_even")]
+        private IWebElement Employee { get; set; }
+
         [FindsBy(How = How.Id, Using = "attendance_date")]
         private IWebElement Date { get; set; }
 
@@ -54,6 +57,9 @@ namespace OrangeHRM.UI
             SwitchToFrame();
             EmployeeName.Clear();
             EmployeeName.SendKeys(employeeName);
+            SwitchToParent();
+            driver.SwitchTo().Frame("noncoreIframe");
+            Employee.Click();
             SwitchToParent();
         }
 

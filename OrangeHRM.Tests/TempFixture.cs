@@ -40,24 +40,32 @@ namespace OrangeHRM.Tests
             var level2Text = "Attendance";
             var level3Text = "Employee Records";
             var employeeName = "Andrew Keller";
-            var day = 11;
+            var day = 14;
             var empty = "No attendance records to display";
             var attendanceTime = "00:15";
 
             DashboardPage dashboardPage = new DashboardPage(driver);
             Assert.IsTrue(dashboardPage.IsVisible, "Dashboard page is not visible");
             dashboardPage.MenuComponent.OpenMenu(level1Text, level2Text, level3Text);
+            Thread.Sleep(1000);
             ViewAttendanceRecordPage viewAttendanceRecordPage = new ViewAttendanceRecordPage(driver);
             Assert.IsTrue(viewAttendanceRecordPage.IsVisible, "View Attendance Record Page is not visible");
-            viewAttendanceRecordPage.SetEmployeeName(employeeName); // TODO: Click on employee
-                viewAttendanceRecordPage.SelectDay(day);
+            viewAttendanceRecordPage.SetEmployeeName(employeeName);
+            Thread.Sleep(1000);
+            viewAttendanceRecordPage.SelectDay(day);
+            Thread.Sleep(1000);
             viewAttendanceRecordPage.ClickView();
+            Thread.Sleep(1000);
             Assert.AreEqual(empty, viewAttendanceRecordPage.TableRows.First().PunchInText);
             viewAttendanceRecordPage.ClickAdd();
+            Thread.Sleep(1000);
             ProxyPunchInPunchOutPage proxyPunchInPunchOutPage = new ProxyPunchInPunchOutPage(driver);
             Assert.IsTrue(proxyPunchInPunchOutPage.IsVisible, "Proxy Punch In Punch Out page is not visible");
             proxyPunchInPunchOutPage.SetAttendanceTime(attendanceTime);
+            Thread.Sleep(1000);
             proxyPunchInPunchOutPage.ClickIn();
+            proxyPunchInPunchOutPage.ClickIn();
+            Thread.Sleep(1000);
             Assert.IsTrue(viewAttendanceRecordPage.IsVisible, "View Attendance Record Page is not visible");
             Assert.AreEqual($"{DateTime.Now.ToString("yyyy-MM-")}{day} {attendanceTime}:00 GMT 3.0", viewAttendanceRecordPage.TableRows.First().PunchInTextWithSelection);
         }
